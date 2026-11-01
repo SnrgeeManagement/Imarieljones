@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#100b38" name="theme-color"/>
+<title>Portfolio | Ariel L. Jones</title>
+<meta content="The Ariel L. Jones portfolio is being updated. New projects are on the way." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#100b38;color:#fafaff;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{color:#35f5bd}a:hover{color:#9dffdf}
+.bar{background:#140e32;padding:22px clamp(20px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.bar .home{color:#fafaff;text-decoration:none;font:400 22px 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.06em}.bar .home b{color:#35f5bd;font-weight:400}
+.bar .back{font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;text-decoration:none}
+main{flex:1;width:100%;max-width:1180px;margin:auto;padding:clamp(40px,7vw,90px) 6%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(30px,5vw,70px);align-items:center}
+.kicker{font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:#35f5bd}
+h1{font:400 clamp(2.5rem,6vw,4.8rem)/1.02 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.055em;text-transform:uppercase;margin:16px 0 22px}
+h1 span{color:#35f5bd;display:block}
+p{color:#c6c2e1;font-size:17px;line-height:1.75;margin:0 0 16px;max-width:520px;text-wrap:pretty}
+.menu{list-style:none;padding:0;margin:26px 0 34px;border-top:1px solid #2c2466;max-width:520px}
+.menu li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px dashed #2c2466;font-size:14px;color:#fafaff}
+.menu li em{font-style:normal;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#35f5bd;white-space:nowrap}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:15px 24px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#35f5bd;color:#100b38;text-decoration:none;border:1px solid #35f5bd}
+.btn:hover{background:#9dffdf;color:#100b38}
+.btn.ghost{background:none;color:#35f5bd}.btn.ghost:hover{background:#35f5bd;color:#100b38}
+.scene{width:100%;max-width:560px;justify-self:center}
+.scene svg{width:100%;height:auto;display:block}
+footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:28px 6%;background:#08071e;color:#a9a3cc;font-size:12px;align-items:center}
+footer nav{display:flex;gap:22px}footer nav a{color:#d9d5ef;text-underline-offset:4px}
+
+.toss{transform-box:view-box;transform-origin:186px 160px;animation:toss 2.8s ease-in-out infinite}
+.cake{transform-box:fill-box;transform-origin:center;animation:flip 2.8s ease-in-out infinite}
+.wave{transform-box:view-box;transform-origin:95px 160px;animation:wave 1.4s ease-in-out infinite alternate}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flick .35s ease-in-out infinite alternate}
+.flame:nth-child(2){animation-delay:.12s}.flame:nth-child(3){animation-delay:.22s}
+.steam{animation:steam 2.4s ease-out infinite;opacity:0}
+.steam:nth-child(2){animation-delay:.8s}.steam:nth-child(3){animation-delay:1.6s}
+.blink{transform-box:fill-box;transform-origin:center;animation:blink 4s infinite}
+.spark{transform-box:fill-box;transform-origin:center;animation:spark 2.8s ease-in-out infinite}
+@keyframes toss{0%,14%{transform:rotate(0)}20%{transform:rotate(-7deg)}27%{transform:rotate(2deg)}34%,56%{transform:rotate(0)}61%{transform:rotate(3deg)}68%,100%{transform:rotate(0)}}
+@keyframes flip{0%,19%{transform:translateY(0) scaleY(1)}30%{transform:translateY(-70px) scaleY(-1)}40%{transform:translateY(-92px) scaleY(1)}50%{transform:translateY(-70px) scaleY(-1)}60%,100%{transform:translateY(0) scaleY(1)}}
+@keyframes wave{from{transform:rotate(-6deg)}to{transform:rotate(8deg)}}
+@keyframes flick{from{transform:scaleY(.75)}to{transform:scaleY(1.15)}}
+@keyframes steam{0%{opacity:0;transform:translateY(6px)}25%{opacity:.7}100%{opacity:0;transform:translateY(-38px)}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.15)}}
+@keyframes spark{0%,36%{opacity:0;transform:scale(.4)}42%{opacity:1;transform:scale(1)}52%,100%{opacity:0;transform:scale(1.3)}}
+@media(prefers-reduced-motion:reduce){.toss,.cake,.wave,.flame,.steam,.blink,.spark{animation:none}.steam{opacity:.5}}
+@media(max-width:860px){main{grid-template-columns:minmax(0,1fr)}.scene{order:-1;max-width:440px}}
+@media(max-width:680px){footer{justify-content:center;text-align:center}.actions .btn{width:100%}}
+</style></head><body>
+<div class="bar"><a class="home" href="../">ARIEL L. <b>JONES</b></a><a class="back" href="../">← Back to site</a></div>
+<main>
+<div>
+<div class="kicker">Portfolio · In the kitchen</div>
+<h1>Something good is<span>cooking.</span></h1>
+<p>I'm in the kitchen plating up a fresh batch of projects. Good things take a little time to simmer, so thanks for your patience while everything comes together.</p>
+<ul class="menu" aria-label="Coming soon">
+<li>Brand &amp; creative direction <em>Simmering</em></li>
+<li>Systems &amp; operations builds <em>In the oven</em></li>
+<li>Training &amp; onboarding programs <em>Almost plated</em></li>
+</ul>
+<div class="actions"><a class="btn" href="../#expertise">See What I Do</a><a class="btn ghost" href="mailto:info@imarieljones.com">Connect With Me</a></div>
+</div>
+<div class="scene" role="img" aria-label="Animated illustration of Ariel in an apron flipping a pancake at the stove">
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+<circle cx="200" cy="150" r="140" fill="#1a1450"/>
+<line x1="250" y1="70" x2="370" y2="70" stroke="#2c2466" stroke-width="3"/>
+<rect x="262" y="44" width="18" height="26" rx="4" fill="#35f5bd" opacity=".55"/>
+<rect x="288" y="36" width="22" height="34" rx="5" fill="#fafaff" opacity=".35"/>
+<rect x="318" y="48" width="16" height="22" rx="4" fill="#35f5bd" opacity=".35"/>
+<rect x="340" y="40" width="20" height="30" rx="4" fill="#fafaff" opacity=".2"/>
+<path d="M140 54 C110 54 99 77 100 110 L95 222 Q116 228 126 214 L128 150 L152 150 L154 214 Q164 228 185 222 L180 110 C181 77 170 54 140 54 Z" fill="#141019"/>
+<g class="wave">
+<path d="M95 162 L84 199" stroke="#a8693f" stroke-width="14" stroke-linecap="round"/>
+<path d="M84 199 L75 170" stroke="#a8693f" stroke-width="12" stroke-linecap="round"/>
+<path d="M95 160 L90 178" stroke="#2b3a8c" stroke-width="20" stroke-linecap="round"/>
+<line x1="73" y1="166" x2="64" y2="126" stroke="#fafaff" stroke-width="4" stroke-linecap="round"/>
+<rect x="54" y="102" width="20" height="26" rx="4" fill="#fafaff" transform="rotate(-13 64 115)"/>
+<ellipse cx="74" cy="167" rx="7" ry="8" fill="#a8693f"/>
+</g>
+<path d="M130 120 L130 146 Q140 153 150 146 L150 120 Z" fill="#a8693f"/>
+<path d="M130 128 Q140 138 150 128 L150 134 Q140 142 130 134 Z" fill="#8a5230" opacity=".7"/>
+<path d="M140 143 C120 143 99 145 91 157 C85 167 85 192 87 240 L193 240 C195 192 195 167 189 157 C181 145 160 143 140 143 Z" fill="#2b3a8c"/>
+<path d="M128 145 Q140 154 152 145" fill="none" stroke="#202c70" stroke-width="2"/>
+<path d="M124 160 Q125 150 131 146 M156 160 Q155 150 149 146" fill="none" stroke="#fafaff" stroke-width="3" stroke-linecap="round"/>
+<path d="M123 160 L157 160 L160 198 C170 202 175 210 177 240 L103 240 C105 210 110 202 120 198 Z" fill="#fafaff"/>
+<path d="M118 198 L162 198" stroke="#35f5bd" stroke-width="4" stroke-linecap="round"/>
+<path d="M162 198 Q172 206 168 214 M162 198 Q176 200 178 208" fill="none" stroke="#35f5bd" stroke-width="3" stroke-linecap="round"/>
+<rect x="127" y="210" width="26" height="16" rx="3" fill="none" stroke="#c6c2e1" stroke-width="2"/>
+<path d="M140 62 C163 62 171 82 170 100 C169 118 158 131 140 132 C122 131 111 118 110 100 C109 82 117 62 140 62 Z" fill="#a8693f"/>
+<circle cx="111" cy="124" r="6.5" fill="none" stroke="#dcdbe6" stroke-width="2"/>
+<circle cx="169" cy="124" r="6.5" fill="none" stroke="#dcdbe6" stroke-width="2"/>
+<path d="M140 56 C114 56 103 75 105 108 C106 126 108 142 105 164 Q113 170 118 161 C114 132 113 104 119 86 C125 73 133 67 140 66 C147 67 155 73 161 86 C167 104 166 132 162 161 Q167 170 175 164 C172 142 174 126 175 108 C177 75 166 56 140 56 Z" fill="#141019"/>
+<path d="M140 57 L140 66" stroke="#3d3756" stroke-width="1.5"/>
+<path d="M124 66 Q112 82 111 108 M156 66 Q168 82 169 108" fill="none" stroke="#3d3756" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+<path d="M122 90 Q128 86 135 89 M145 89 Q152 86 158 90" fill="none" stroke="#141019" stroke-width="2.4" stroke-linecap="round"/>
+<g class="blink">
+<path d="M122 99 Q128.5 94 135 99 Q128.5 102.5 122 99 Z" fill="#fafaff"/>
+<path d="M145 99 Q151.5 94 158 99 Q151.5 102.5 145 99 Z" fill="#fafaff"/>
+<circle cx="128.5" cy="98.6" r="2.7" fill="#2a160d"/><circle cx="151.5" cy="98.6" r="2.7" fill="#2a160d"/>
+<path d="M121 99 Q128.5 93 136 98.5 M144 98.5 Q151.5 93 159 99" fill="none" stroke="#141019" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<path d="M140 101 Q138.5 109 136 112 Q140 114.5 144 112" fill="none" stroke="#8a5230" stroke-width="1.8" stroke-linecap="round"/>
+<ellipse cx="122" cy="112" rx="5" ry="3" fill="#c97a5a" opacity=".5"/><ellipse cx="158" cy="112" rx="5" ry="3" fill="#c97a5a" opacity=".5"/>
+<path d="M128 118 Q140 115.5 152 118 Q147 129 140 129 Q133 129 128 118 Z" fill="#7a3b2e"/>
+<path d="M130 118.6 Q140 117 150 118.6 Q146.5 122.5 140 122.5 Q133.5 122.5 130 118.6 Z" fill="#fafaff"/>
+<g>
+<path class="flame" d="M258 228 q-6 -10 0 -18 q6 8 0 18z" fill="#35f5bd"/>
+<path class="flame" d="M272 228 q-7 -12 0 -22 q7 10 0 22z" fill="#9dffdf"/>
+<path class="flame" d="M286 228 q-6 -10 0 -18 q6 8 0 18z" fill="#35f5bd"/>
+</g>
+<g class="toss">
+<path d="M185 162 L197 197" stroke="#a8693f" stroke-width="14" stroke-linecap="round"/>
+<path d="M197 197 L213 204" stroke="#a8693f" stroke-width="12" stroke-linecap="round"/>
+<path d="M185 160 L190 178" stroke="#2b3a8c" stroke-width="20" stroke-linecap="round"/>
+<line x1="216" y1="206" x2="236" y2="208" stroke="#4a3f99" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="215" cy="205" rx="8" ry="7" fill="#a8693f"/>
+<path d="M232 204 h78 q-4 18 -39 18 q-35 0 -39 -18z" fill="#2c2466"/>
+<ellipse cx="271" cy="204" rx="39" ry="5" fill="#4a3f99"/>
+<g class="cake"><ellipse cx="271" cy="200" rx="25" ry="5.5" fill="#f2b84b"/><ellipse cx="264" cy="199" rx="4" ry="1.4" fill="#c98a2a"/><ellipse cx="278" cy="201" rx="3" ry="1.1" fill="#c98a2a"/></g>
+</g>
+<g stroke="#fafaff" stroke-width="3" fill="none" stroke-linecap="round">
+<path class="steam" d="M256 176 q-6 -8 0 -16 q6 -8 0 -16"/>
+<path class="steam" d="M272 170 q-6 -8 0 -16 q6 -8 0 -16"/>
+<path class="steam" d="M288 176 q-6 -8 0 -16 q6 -8 0 -16"/>
+</g>
+<g class="spark" fill="#35f5bd"><path d="M318 108 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/></g>
+<rect x="20" y="226" width="360" height="94" rx="6" fill="#1d1650"/>
+<rect x="20" y="224" width="360" height="7" rx="3" fill="#35f5bd"/>
+<rect x="232" y="246" width="86" height="54" rx="6" fill="none" stroke="#2c2466" stroke-width="3"/>
+<g fill="#2c2466"><circle cx="70" cy="262" r="7"/><circle cx="96" cy="262" r="7"/><circle cx="122" cy="262" r="7"/></g>
+</svg>
+</div>
+</main>
+<footer><span>© 2026 Ariel L. Jones. All rights reserved.</span><nav><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a></nav></footer>
+</body></html>
