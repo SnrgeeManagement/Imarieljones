@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#100b38" name="theme-color"/>
 <title>Portfolio | Ariel L. Jones</title>
-<meta content="The Ariel L. Jones portfolio is being updated. New projects are on the way." name="description"/>
+<meta content="Selected brand, systems, and digital work by Ariel L. Jones." name="description"/>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#100b38;color:#fafaff;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}
@@ -45,12 +45,79 @@ footer nav{display:flex;gap:22px}footer nav a{color:#d9d5ef;text-underline-offse
 @media(prefers-reduced-motion:reduce){.toss,.cake,.wave,.flame,.steam,.blink,.spark{animation:none}.steam{opacity:.5}}
 @media(max-width:860px){main{grid-template-columns:minmax(0,1fr)}.scene{order:-1;max-width:440px}}
 @media(max-width:680px){footer{justify-content:center;text-align:center}.actions .btn{width:100%}}
+.work{width:100%;max-width:1180px;margin:auto;padding:clamp(50px,8vw,100px) 6% 0}
+.work-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,4vw,50px)}
+.work-head h1{margin-bottom:0}
+.project{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(28px,4vw,44px) 0;border-top:1px solid #2c2466}
+.project-img{display:block;border:1px solid #2c2466;overflow:hidden;cursor:zoom-in;background:#fafaff}
+.project-img img{display:block;width:100%;height:auto;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.project-img:hover img{transform:scale(1.03)}
+.project .tag{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#35f5bd}
+.project h2{font:400 clamp(2rem,4vw,3.2rem)/1 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.05em;text-transform:uppercase;margin:14px 0 18px}
+.project ul{list-style:none;padding:0;margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.project li{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fafaff;border:1px solid #40356e;padding:8px 12px}
+.lightbox{position:fixed;inset:0;background:#08071ef2;display:none;align-items:center;justify-content:center;padding:4vw;z-index:50;cursor:zoom-out}
+.lightbox.open{display:flex}.lightbox img{max-width:100%;max-height:100%;box-shadow:0 30px 80px #000a}
+.lightbox button{position:absolute;top:18px;right:22px;background:none;border:1px solid #35f5bd;color:#35f5bd;font:800 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:12px 16px;cursor:pointer}
+main.cooking{padding-top:clamp(40px,6vw,70px)}
+.dub-visual{position:relative}
+.dub-browser{background:#0c0a14;border:1px solid #2c2466;overflow:hidden;box-shadow:0 30px 60px #04021a80}
+.dub-chrome{display:flex;align-items:center;gap:6px;padding:10px 12px;background:#1b1830;border-bottom:1px solid #2c2466}
+.dub-chrome i{width:9px;height:9px;border-radius:50%;background:#40356e}
+.dub-chrome span{margin-left:10px;font-size:11px;color:#a9a3cc;background:#100b38;padding:5px 12px;border-radius:20px;flex:1;max-width:240px}
+.dub-frame{position:relative;aspect-ratio:16/11;overflow:hidden;background:#0c0a14}
+.dub-frame iframe{position:absolute;top:0;left:0;width:250%;height:250%;border:0;transform:scale(.4);transform-origin:0 0;pointer-events:none}
+.dub-open{position:absolute;inset:0;z-index:2}
+.dub-hero{padding:clamp(30px,5vw,56px) 24px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#3a2a1a 0%,#0c0a14 70%)}
+.dub-hero img{height:56px;width:auto;display:block;margin:0 auto 20px}
+.dub-h{font:400 clamp(1.5rem,3vw,2.3rem)/1.05 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.04em;text-transform:uppercase;color:#fafaff}
+.dub-h em{font-style:italic;font-family:Georgia,serif;text-transform:none;letter-spacing:0;color:#d9b77a}
+.dub-cta{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.dub-cta span{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:11px 14px;border:1px solid #d9b77a;color:#d9b77a;white-space:nowrap}
+.dub-cta span:first-child{background:#d9b77a;color:#0c0a14}
+.dub-marquee{overflow:hidden;background:#d9b77a;color:#0c0a14;padding:9px 0}
+.dub-marquee span{display:inline-block;white-space:nowrap;font-size:10px;font-weight:800;letter-spacing:.14em;animation:dubMq 18s linear infinite}
+@keyframes dubMq{from{transform:translateX(0)}to{transform:translateX(-40%)}}
+.feature{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid #2c2466}
+.feature:first-of-type{margin-top:8px}
+.f-num{font:400 13px 'Archivo Black','Arial Black',Arial,sans-serif;color:#100b38;background:#35f5bd;width:38px;height:38px;display:grid;place-items:center}
+.feature h3{font:400 18px 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.03em;text-transform:uppercase;margin:6px 0 8px;color:#fafaff}
+.feature p{font-size:15px;margin:0 0 10px}
+.f-link{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){.dub-marquee span{animation:none}}
+@media(max-width:860px){.project{grid-template-columns:minmax(0,1fr)}}
 </style></head><body>
 <div class="bar"><a class="home" href="../">ARIEL L. <b>JONES</b></a><a class="back" href="../">← Back to site</a></div>
-<main>
+<section class="work">
+<div class="work-head"><div><div class="kicker">Portfolio</div><h1>Selected<span>work.</span></h1></div></div>
+<article class="project dub">
+<div class="dub-visual">
+<div class="dub-browser"><div class="dub-chrome"><i></i><i></i><i></i><span>dollupbeauty.org</span></div>
+<div class="dub-frame"><iframe src="https://www.dollupbeauty.org/" title="Doll-Up Beauty Suites live website" loading="lazy" tabindex="-1"></iframe><a class="dub-open" href="https://www.dollupbeauty.org/" target="_blank" rel="noopener noreferrer" aria-label="Open dollupbeauty.org in a new tab"></a></div></div>
+</div>
 <div>
-<div class="kicker">Portfolio · In the kitchen</div>
-<h1>Something good is<span>cooking.</span></h1>
+<div class="tag">Website · Booking · Network</div>
+<h2>Doll-Up Beauty Suites</h2>
+<p>A website for luxury, private salon suites in Chicago, designed for beauty professionals who are ready to own more.</p>
+<div class="feature"><div class="f-num">01</div><div><h3>Suite booking</h3><p>Suite availability and a direct application flow, so beauty professionals can check open suites and apply in a few steps.</p><a class="f-link" href="https://www.dollupbeauty.org/suiterental" target="_blank" rel="noopener noreferrer">View suite rental <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a></div></div>
+<div class="feature"><div class="f-num">02</div><div><h3>StyleSync stylist network</h3><p>A directory that connects clients with the suite's hair, lash, and beauty professionals, each with a profile and a way to book or get in touch.</p><a class="f-link" href="https://www.dollupbeauty.org/network" target="_blank" rel="noopener noreferrer">View StyleSync <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a></div></div>
+<a class="btn" style="margin-top:26px" href="https://www.dollupbeauty.org" target="_blank" rel="noopener noreferrer">Visit dollupbeauty.org</a>
+</div>
+</article>
+<article class="project">
+<a class="project-img" href="well-howse-brand-identity.jpg" data-lightbox><img alt="Well-Howse brand identity board: primary logo, wordmark, icon variations, color palette, typography, social media icons, and patterns" src="well-howse-brand-identity.jpg" width="1536" height="1024"/></a>
+<div>
+<div class="tag">Brand Identity</div>
+<h2>Well-Howse</h2>
+<p>A place for restoration, care, community &amp; wholeness.</p>
+<ul><li>Primary logo</li><li>Wordmark</li><li>Icon variations</li><li>Color palette</li><li>Typography</li><li>Social media icons</li><li>Patterns &amp; textures</li></ul>
+</div>
+</article>
+</section>
+<main class="cooking">
+<div>
+<div class="kicker">More in the kitchen</div>
+<h1 style="font-size:clamp(2.2rem,5vw,3.8rem)">More is<span>cooking.</span></h1>
 <p>I'm in the kitchen plating up a fresh batch of projects. Good things take a little time to simmer, so thanks for your patience while everything comes together.</p>
 <ul class="menu" aria-label="Coming soon">
 <li>Brand &amp; creative direction <em>Simmering</em></li>
@@ -131,4 +198,6 @@ footer nav{display:flex;gap:22px}footer nav a{color:#d9d5ef;text-underline-offse
 </div>
 </main>
 <footer><span>© 2026 Ariel L. Jones. All rights reserved.</span><nav><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a></nav></footer>
+<div class="lightbox" role="dialog" aria-label="Project image"><button type="button">Close</button><img alt=""/></div>
+<script>(function(){var lb=document.querySelector('.lightbox'),im=lb.querySelector('img');document.querySelectorAll('[data-lightbox]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');im.alt=a.querySelector('img').alt;lb.classList.add('open')})});lb.addEventListener('click',function(){lb.classList.remove('open')});document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open')})})();</script>
 </body></html>
