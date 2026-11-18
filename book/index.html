@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#100b38" name="theme-color"/>
+<title>Book a Consultation | Ariel L. Jones</title>
+<meta content="Request a consultation with Ariel L. Jones for strategy, systems, onboarding, training, or digital and creative projects." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#100b38;color:#fafaff;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+a{color:#35f5bd}a:hover{color:#9dffdf}
+.bar{background:#08071e;padding:20px clamp(20px,4vw,64px);display:flex;justify-content:space-between;align-items:center;gap:16px}
+.bar .home{white-space:nowrap;color:#fafaff;text-decoration:none;font:400 22px 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.06em}.bar .home b{color:#35f5bd;font-weight:400}
+.bar .back{white-space:nowrap;font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;text-decoration:none}
+.hero{background:radial-gradient(ellipse at 20% 40%,#134d56 0%,transparent 40%),radial-gradient(ellipse at 85% 30%,#25156c 0%,transparent 55%),#100b38}
+main{flex:1;width:100%;max-width:1180px;margin:auto;padding:clamp(50px,8vw,100px) 6%;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,90px);align-items:start}
+.kicker{font-size:11px;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:#35f5bd}
+h1{font:400 clamp(2.2rem,3.9vw,4.4rem)/.95 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.065em;text-transform:uppercase;margin:16px 0 24px}
+h1 span{display:block;color:#35f5bd}main>div:first-child{min-width:0;container-type:inline-size}main h1{font-size:min(4.4rem,11.4cqi)!important}
+p{color:#c6c2e1;font-size:17px;line-height:1.8;margin:0 0 18px;text-wrap:pretty}
+.steps{list-style:none;padding:0;margin:30px 0 0;border-top:1px solid #2c2466}
+.steps li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid #2c2466;font-size:15px;line-height:1.6;color:#d9d5ef}
+.steps b{font:400 12px 'Archivo Black','Arial Black',Arial,sans-serif;color:#100b38;background:#35f5bd;width:30px;height:30px;display:grid;place-items:center}
+.panel{background:#191147;border:1px solid #40356e;padding:clamp(22px,4vw,40px)}
+.panel h2{font:400 22px 'Archivo Black','Arial Black',Arial,sans-serif;letter-spacing:-.03em;text-transform:uppercase;margin:0 0 22px}
+form{display:grid;gap:16px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:end}
+label{display:grid;gap:8px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#d9d5ef}
+label small{font-weight:400;letter-spacing:.04em;text-transform:none;color:#a9a3cc}
+input,select,textarea{width:100%;font:16px Arial,Helvetica,sans-serif;color:#fafaff;background:#100b38;border:1px solid #40356e;padding:14px 15px;border-radius:0;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+input[type=date]{color-scheme:dark;min-height:51px}
+select{background-image:linear-gradient(45deg,transparent 50%,#35f5bd 50%),linear-gradient(135deg,#35f5bd 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-right:40px}
+select option{color:#100b38;background:#fff}
+textarea{resize:vertical;min-height:120px}
+input:focus,select:focus,textarea:focus{border-color:#35f5bd}
+fieldset{border:0;padding:0;margin:0;display:grid;gap:10px}
+legend{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#d9d5ef;margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:block;letter-spacing:.06em;text-transform:none;font-weight:700;font-size:14px;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:10px 16px;border:1px solid #40356e;background:#100b38;color:#fafaff;transition:all .2s;white-space:nowrap}
+.chips input:checked+span{background:#35f5bd;border-color:#35f5bd;color:#100b38}
+.chips input:focus-visible+span{outline:2px solid #35f5bd;outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:15px 26px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:#35f5bd;color:#100b38;border:0;cursor:pointer;white-space:nowrap;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-3px);background:#9dffdf}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+.status{margin:0;font-size:15px;color:#35f5bd;min-height:1em}.status.err{color:#ff9ab0}
+.done{display:none;text-align:center;padding:30px 0}
+.done h2{font-size:28px}
+.panel.sent form{display:none}.panel.sent .done{display:block}
+.note{font-size:13px;color:#a9a3cc;margin:4px 0 0}
+footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding:28px 6%;background:#08071e;color:#a9a3cc;font-size:12px;align-items:center}
+footer nav{display:flex;gap:22px}footer nav a{color:#d9d5ef;text-underline-offset:4px;white-space:nowrap}
+.in{opacity:0;transform:translateY(24px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}.d2{animation-delay:.15s}.d3{animation-delay:.3s}
+@keyframes rise{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.in{animation:none;opacity:1;transform:none}}
+@media(max-width:1024px){main{grid-template-columns:minmax(0,1fr)}h1{font-size:clamp(2rem,8.6vw,4.4rem)}}
+@media(max-width:680px){.row{grid-template-columns:minmax(0,1fr)}.btn{width:100%}footer{justify-content:center;text-align:center}.bar .home{font-size:18px}}
+</style></head><body>
+<div class="bar"><a class="home" href="../">ARIEL L. <b>JONES</b></a><a class="back" href="../">← Back to site</a></div>
+<div class="hero">
+<main>
+<div class="in">
+<div class="kicker">Let's talk it through</div>
+<h1>Book a<span>consultation.</span></h1>
+<p>Tell me a little about what you're working on and when you're available. I'll review your request and email you to confirm a time.</p>
+<ol class="steps">
+<li><b>1</b><span>Choose a focus and share a few details about your project.</span></li>
+<li><b>2</b><span>Pick a preferred day and time, plus a backup option.</span></li>
+<li><b>3</b><span>I'll review your request and email your confirmation with the Zoom link and a calendar invite.</span></li>
+</ol>
+</div>
+<div class="panel in d2" id="panel">
+<h2>Request a time</h2>
+<form id="book-form" action="https://formsubmit.co/info@imarieljones.com" method="POST" novalidate>
+<input type="hidden" name="_subject" value="New consultation request from imarieljones.com"/>
+<input type="hidden" name="_template" value="table"/>
+<input type="hidden" name="timezone" id="tz"/>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+<div class="row"><label>Name<input name="name" type="text" required autocomplete="name"/></label><label>Email<input name="email" type="email" required autocomplete="email"/></label></div>
+<div class="row"><label>Phone <small>(optional)</small><input name="phone" type="tel" autocomplete="tel"/></label><label>Organization <small>(optional)</small><input name="organization" type="text" autocomplete="organization"/></label></div>
+<fieldset><legend>Consultation focus</legend><div class="chips">
+<label><input type="radio" name="focus" value="Strategy & Business Systems" required/><span>Strategy &amp; Business Systems</span></label>
+<label><input type="radio" name="focus" value="Onboarding & Training"/><span>Onboarding &amp; Training</span></label>
+<label><input type="radio" name="focus" value="Digital & Creative Experiences"/><span>Digital &amp; Creative Experiences</span></label>
+<label><input type="radio" name="focus" value="Not sure yet"/><span>Not sure yet</span></label>
+</div></fieldset>
+<fieldset><legend>Meeting format</legend><div class="chips">
+<label><input type="radio" name="format" value="Video call" checked/><span>Video call</span></label>
+<label><input type="radio" name="format" value="Phone call"/><span>Phone call</span></label>
+</div></fieldset>
+<div class="row"><label>Preferred date<input name="preferred_date" id="d1" type="date" required/></label><label>Preferred time<select name="preferred_time" required><option value="" selected disabled>Choose a time</option><option>Morning (9 AM – 12 PM)</option><option>Afternoon (12 – 3 PM)</option><option>Late afternoon (3 – 6 PM)</option></select></label></div>
+<div class="row"><label>Backup date <small>(optional)</small><input name="backup_date" id="d2" type="date"/></label><label>Backup time <small>(optional)</small><select name="backup_time"><option value="" selected>Choose a time</option><option>Morning (9 AM – 12 PM)</option><option>Afternoon (12 – 3 PM)</option><option>Late afternoon (3 – 6 PM)</option></select></label></div>
+<label>What would you like to discuss?<textarea name="message" rows="5" required></textarea></label>
+<button class="btn" type="submit">Request Consultation</button>
+<p class="note">Times are shown in your local time zone. Submitting a request does not confirm a booking until you hear back from me.</p>
+<p class="status" role="status" aria-live="polite"></p>
+</form>
+<div class="done" aria-live="polite"><div class="kicker">Request received</div><h2 style="margin-top:14px">Thank you!</h2><p>Your consultation request is on its way. Once I review it, you'll get an email with your confirmed time and meeting details.</p><a class="btn" href="../" style="text-decoration:none">Back to site</a></div>
+</div>
+</main>
+</div>
+<footer><span>© 2026 Ariel L. Jones. All rights reserved.</span><nav><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Use</a></nav></footer>
+<script>
+/* Booking sheet: paste your Google Apps Script web app URL between the quotes.
+   While empty, requests are emailed to you through FormSubmit as before. */
+var BOOKING_URL='';
+(function(){
+var f=document.getElementById('book-form'),s=f.querySelector('.status'),b=f.querySelector('button[type=submit]'),p=document.getElementById('panel');
+try{document.getElementById('tz').value=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
+var t=new Date();t.setDate(t.getDate()+1);var m=t.toISOString().slice(0,10);document.getElementById('d1').min=m;document.getElementById('d2').min=m;
+f.addEventListener('submit',function(e){e.preventDefault();
+if(!f.checkValidity()){s.className='status err';s.textContent='Please complete the required fields.';f.reportValidity();return}
+b.disabled=true;b.textContent='Sending…';s.className='status';s.textContent='';
+var req=BOOKING_URL?fetch(BOOKING_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}):
+fetch('https://formsubmit.co/ajax/info@imarieljones.com',{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+.then(function(r){return r.json().then(function(d){if(!r.ok||d.success==='false'||d.success===false)throw 0})});
+req
+.then(function(){f.reset();p.classList.add('sent');window.scrollTo({top:p.getBoundingClientRect().top+scrollY-30,behavior:'smooth'})})
+.catch(function(){s.className='status err';s.innerHTML='Something went wrong. Please email <a href="mailto:info@imarieljones.com">info@imarieljones.com</a>.'})
+.finally(function(){b.disabled=false;b.textContent='Request Consultation'})});
+})();</script>
+</body></html>
